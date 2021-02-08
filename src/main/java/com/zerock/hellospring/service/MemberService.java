@@ -2,11 +2,13 @@ package com.zerock.hellospring.service;
 
 import com.zerock.hellospring.domain.Member;
 import com.zerock.hellospring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
